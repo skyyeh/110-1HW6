@@ -10,8 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <asp:TextBox ID="tb_id" runat="server"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="rev_id" runat="server" ErrorMessage="不符合格式"
+            <asp:TextBox ID="tb_id" runat="server"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="rev_id" runat="server" ErrorMessage="不合法"
                 ForeColor="Maroon" ControlToValidate="tb_id" ValidationExpression="^cd[bc]*a[bc]*e[abc]*d*[abc]*cb$"></asp:RegularExpressionValidator>
             <br/>
             <asp:Button ID="btn_Submit" runat="server" Text="送出" OnClick="btn_Submit_Click"/>
